@@ -4,7 +4,11 @@ myImage.addEventListener("click", () => {
   const mySrc = myImage.getAttribute("src");
   if (mySrc === "images/milo.jpg") {
     myImage.setAttribute("src", "images/molly.jpg");
-  } else {
+  } 
+  else if (mySrc === "images/molly.jpg") {
+    myImage.setAttribute("src", "images/loon.jpg");
+  } 
+  else {
     myImage.setAttribute("src", "images/milo.jpg");
   }
 });
